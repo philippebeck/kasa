@@ -1,0 +1,18 @@
+header {
+  position: relative;
+  margin: 20px;
+
+  img {
+    border-radius: 10px;
+    height: 110px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  h1 {
+    position: absolute;
+    top: 0;
+    padding: 0 20px;
+    color: #fff;
+  }
+}
