@@ -1,4 +1,4 @@
-footer {
+.footer {
   padding: 100px 0;
   text-align: center;
   color: #fff;
@@ -10,7 +10,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-  footer {
+  .footer {
     img {
       margin-bottom: 40px;
     }
