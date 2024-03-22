@@ -1,4 +1,4 @@
-header {
+.banner {
   position: relative;
   margin: 20px;
 
@@ -15,4 +15,18 @@ header {
     padding: 0 20px;
     color: #fff;
   }
+}
+
+@media (min-width: 768px) {
+  .banner {
+    margin: 50px;
+
+    img {
+      height: 220px;
+    }
+  }
+}
+
+.filter {
+  filter: brightness(50%);
 }
