@@ -18,7 +18,7 @@ const Home = () => {
       <Banner src={img} alt="Des falaises en bord de mer" title="Chez vous, partout et ailleurs" className="filter" />
 
       <ul>
-        {housing.map(({ cover, title, id }) =>
+        { housing.map(({ cover, title, id }) =>
           <li key={id}>
 
             <Link to={`/housing/${id}`}>
