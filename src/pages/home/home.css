@@ -1,0 +1,35 @@
+[id="home"] {
+
+  ul {
+    display: flex;
+    flex-flow: wrap;
+    gap: 30px;
+    margin: 20px;
+  }
+
+  li {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  [id="home"] {
+
+    ul {
+      margin: 50px;
+    }
+
+    li {
+      width: calc((100% - 30px) / 2);
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  [id="home"] {
+
+    li {
+      width: calc((100% - 60px) / 3);
+    }
+  }
+}
