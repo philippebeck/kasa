@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px;
+  margin: var(--margin-mobile);
 
   img {
     height: 50px;
@@ -23,7 +23,7 @@
 
 @media (min-width: 768px) {
   .nav {
-    margin: 50px;
+    margin: var(--margin-desktop);
 
     ul {
       text-transform: capitalize;

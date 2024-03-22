@@ -1,6 +1,6 @@
 .banner {
   position: relative;
-  margin: 20px;
+  margin: var(--margin-mobile);
 
   img {
     border-radius: 10px;
@@ -13,13 +13,13 @@
     position: absolute;
     top: 0;
     padding: 0 20px;
-    color: #fff;
+    color: var(--white);
   }
 }
 
 @media (min-width: 768px) {
   .banner {
-    margin: 50px;
+    margin: var(--margin-desktop);
 
     img {
       height: 220px;

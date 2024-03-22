@@ -1,8 +1,8 @@
 .footer {
   padding: 100px 0;
   text-align: center;
-  color: #fff;
-  background-color: #000;
+  color: var(--white);
+  background-color: var(--black);
 
   img {
     margin-bottom: 10px;
