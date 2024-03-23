@@ -7,7 +7,7 @@ import "./about.css";
 const About = () => {
 
   return (
-    <main>
+    <main id="about">
       <Banner src={img} alt="Des forêts entourées de montagnes" />
 
       { about.map(({ title, content }) =>
