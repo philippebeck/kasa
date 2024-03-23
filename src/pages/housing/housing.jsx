@@ -1,10 +1,12 @@
-import { useParams } from "react-router-dom";
-import housing from "../../assets/housing.json";
-import Error from "../error/error";
+import { useParams }  from "react-router-dom";
+import housing        from "../../assets/housing.json";
+
+import Error    from "../error/error";
 import Carousel from "../../components/carousel/carousel";
 import Collapse from "../../components/collapse/collapse";
-import Host from "../../components/host/host";
-import Rating from "../../components/rating/rating";
+import Host     from "../../components/host/host";
+import Rating   from "../../components/rating/rating";
+
 import "./housing.css";
 
 const Housing = () => {

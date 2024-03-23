@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
-import housing from "../../assets/housing.json";
-import img from "../../assets/home.webp";
+import housing  from "../../assets/housing.json";
+import img      from "../../assets/home.webp";
+
 import Banner from "../../components/banner/banner";
-import Card from "../../components/card/card";
+import Card   from "../../components/card/card";
+
 import "./home.css";
 
 /**
@@ -15,7 +17,12 @@ const Home = () => {
 
   return (
     <main id="home">
-      <Banner src={img} alt="Des falaises en bord de mer" title="Chez vous, partout et ailleurs" className="filter" />
+      <Banner 
+        src={img} 
+        alt="Des falaises en bord de mer" 
+        title="Chez vous, partout et ailleurs" 
+        className="filter" 
+      />
 
       <ul>
         { housing.map(({ cover, title, id }) =>
