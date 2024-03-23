@@ -1,7 +1,8 @@
 :root {
   --primary: #ff6060;
-  --secondary: #fbfbfb;
+  --secondary: #e3e3e3;
   --white: #fff;
+  --grey: #fbfbfb;
   --black: #000;
 
   --margin-mobile: 20px;
