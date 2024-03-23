@@ -1,0 +1,65 @@
+.carousel {
+  position: relative;
+  margin: var(--margin-mobile);
+  color: var(--white);
+
+  img {
+    border-radius: 10px;
+    height: 255px;
+    width: 100%;
+    object-fit: cover;
+
+    & ~ * {
+      position: absolute;
+    }
+  }
+
+  i {
+    font-size: 1.5rem;
+  }
+
+  .fa-chevron-left {
+    top: calc(50% - 12px);
+    left: 10px;
+  }
+
+  .fa-chevron-right {
+    top: calc(50% - 12px);
+    right: 10px;
+  }
+
+  b {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel {
+    margin: var(--margin-desktop);
+
+    img {
+      border-radius: 20px;
+      height: 415px;
+    }
+
+    i {
+      font-size: 5rem;
+    }
+  
+    .fa-chevron-left {
+      top: calc(50% - 40px);
+      left: 10px;
+    }
+  
+    .fa-chevron-right {
+      top: calc(50% - 40px);
+      right: 10px;
+    }
+  
+    b {
+      display: block;
+      bottom: 20px;
+      left: calc(50% - 10px);
+    }
+  }
+}
