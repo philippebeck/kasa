@@ -1,15 +1,30 @@
+import { useState } from "react";
 import "./carousel.css";
 
-const Carousel = ({ src, alt }) => {
+const Carousel = ({ pictures, alt }) => {
+  let [index, setIndex] = useState(0)
+
+  const goPrevious = () => {
+    setIndex((index) => (index - 1 + pictures.length) % pictures.length)
+  }
+
+  const goNext = () => {
+    setIndex((index) => (index + 1) % pictures.length)
+  }
 
   return (
     <figure className="carousel">
-      <img src={src} alt={alt} />
+      <img src={pictures[index]} alt={alt + " (Photo #" + (index + 1) + ")"} />
 
-      <i className="fa-solid fa-chevron-left" aria-hidden="true"></i>
-      <i className="fa-solid fa-chevron-right" aria-hidden="true"></i>
+      { pictures.length > 1 && (
+        <nav>
+          <i className="fa-solid fa-chevron-left" onClick={goPrevious}></i>
+          <i className="fa-solid fa-chevron-right" onClick={goNext}></i>
 
-      <b>1/5</b>
+          <b>{index + 1}/{pictures.length}</b>
+        </nav>
+      )}
+
     </figure>
   )
 }

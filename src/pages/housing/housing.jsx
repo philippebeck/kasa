@@ -15,7 +15,7 @@ const Housing = () => {
 
   return (
     <main id="housing">
-      <Carousel src={card.cover} alt={card.title} />
+      <Carousel pictures={card.pictures} alt={card.title} />
 
       <h1>{card.title}</h1>
       <p>{card.location}</p>
