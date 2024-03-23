@@ -16,9 +16,9 @@
   }
 
   p {
-    margin: 0;
+    margin: -3px 0 0;
     padding: 10px;
-    background-color: var(--secondary);
+    background-color: var(--grey);
   }
 }
 
