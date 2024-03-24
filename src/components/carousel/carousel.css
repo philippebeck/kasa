@@ -1,10 +1,9 @@
 .carousel {
   position: relative;
-  margin: var(--margin-sm);
   color: var(--white);
 
   img {
-    border-radius: 10px;
+    border-radius: var(--radius-md);
     height: 255px;
     width: 100%;
     object-fit: cover;
@@ -35,10 +34,8 @@
 
 @media (min-width: 768px) {
   .carousel {
-    margin: var(--margin-lg);
-
     img {
-      border-radius: 20px;
+      border-radius: var(--radius-lg);
       height: 415px;
     }
 
