@@ -2,11 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: var(--margin-mobile);
+  margin: var(--margin-sm);
   font-size: 0.8rem;
 
   img {
-    height: 47px;
+    height: 48px;
   }
 
   ul {
@@ -22,10 +22,25 @@
   }
 }
 
-
 @media (min-width: 768px) {
   .nav {
-    margin: var(--margin-desktop);
+    margin: var(--margin-md);
+    font-size: 1.2rem;
+
+    img {
+      height: 58px;
+    }
+
+    ul {
+      gap: 3rem;
+      text-transform: capitalize;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav {
+    margin: var(--margin-lg);
     font-size: 1.5rem;
 
     img {
@@ -34,7 +49,6 @@
 
     ul {
       gap: 4rem;
-      text-transform: capitalize;
     }
   }
 }

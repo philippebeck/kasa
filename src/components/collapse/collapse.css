@@ -1,11 +1,9 @@
 .collapse {
-  margin: var(--margin-mobile);
-
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 5px;
+    border-radius: var(--radius-sm);
     background-color: var(--primary);
     color: var(--white);
   }
@@ -19,11 +17,5 @@
     margin: -3px 0 0;
     padding: 10px;
     background-color: var(--grey);
-  }
-}
-
-@media (min-width: 768px) {
-  .collapse {
-    margin: var(--margin-desktop);
   }
 }

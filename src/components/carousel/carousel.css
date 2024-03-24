@@ -1,6 +1,6 @@
 .carousel {
   position: relative;
-  margin: var(--margin-mobile);
+  margin: var(--margin-sm);
   color: var(--white);
 
   img {
@@ -35,7 +35,7 @@
 
 @media (min-width: 768px) {
   .carousel {
-    margin: var(--margin-desktop);
+    margin: var(--margin-lg);
 
     img {
       border-radius: 20px;
