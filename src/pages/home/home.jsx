@@ -19,11 +19,10 @@ const Home = () => {
   return (
     <main id="home">
 
-      <Banner 
-        src={img} 
+      <Banner
+        src={img}
         alt={data.home_alt}
-        title={data.home_title} 
-        className="filter" 
+        title={data.home_title}
       />
 
       <ul>

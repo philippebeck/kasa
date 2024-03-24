@@ -8,20 +8,14 @@ import "./banner.css";
  * @param {string} props.src - The source URL of the image.
  * @param {string} props.alt - The alternative text for the image.
  * @param {string} [props.title=""] - The title to be displayed.
- * @param {string} [props.className=""] - Additional CSS class names for the component.
  * @returns {JSX.Element} The rendered banner component.
  */
-const Banner = ({ src, alt, title="", className="" }) => {
+const Banner = ({ src, alt, title="" }) => {
 
   return (
     <header className="banner">
 
-      <img 
-        src={src} 
-        alt={alt} 
-        className={className} 
-      />
-
+      <img src={src} alt={alt} />
       <h1>{title}</h1>
 
     </header>
