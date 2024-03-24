@@ -1,0 +1,15 @@
+[id="about"] {
+  margin: var(--margin-sm);
+}
+
+@media (min-width: 768px) {
+  [id="about"] {
+    margin: var(--margin-md);
+  }
+}
+
+@media (min-width: 1200px) {
+  [id="about"] {
+    margin: var(--margin-lg);
+  }
+}
