@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import nav from "../../assets/nav.json";
 import "./nav.css";
 
@@ -12,10 +12,12 @@ import "./nav.css";
  * @return {JSX.Element} The rendered navigation component.
  */
 const Nav = ({ src, alt }) => {
+  const location    = useLocation();
+  const currentPath = location.pathname;
 
   return (
     <nav className="nav">
-      <Link to="/">
+      <Link to='/' className={currentPath === '/' ? 'active' : ''}>
         <img src={src} alt={alt} />
       </Link>
 
@@ -23,7 +25,9 @@ const Nav = ({ src, alt }) => {
         { nav.map(({ link, content }) =>
 
         <li key={link}>
-          <Link to={link}>{content}</Link>
+          <Link to={link} className={currentPath === link ? 'active' : ''}>
+            {content}
+          </Link>
         </li>
 
         )}
