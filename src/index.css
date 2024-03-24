@@ -1,13 +1,18 @@
 :root {
-  --primary: #ff6060;
-  --secondary: #e3e3e3;
-  --white: #fff;
-  --grey: #fbfbfb;
-  --black: #000;
+  --primary:    hsl(0, 100%, 69%);
+  --secondary:  hsl(0, 0%, 89%);
+  --white:      hsl(0, 0%, 100%);
+  --grey:       hsl(0, 0%, 98%);
+  --black:      hsl(0, 0%, 0%);
+  --filter:     hsla(0, 0%, 0%, 0.5);
 
-  --margin-mobile: 20px;
-  --margin-tablet: 30px 60px;
-  --margin-desktop: 50px 100px;
+  --margin-sm: 20px;
+  --margin-md: 30px 60px;
+  --margin-lg: 50px 100px;
+
+  --radius-sm: 5px;
+  --radius-md: 10px;
+  --radius-lg: 20px;
 }
 
 body {
