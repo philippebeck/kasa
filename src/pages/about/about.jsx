@@ -12,16 +12,16 @@ const About = () => {
     <main id="about">
 
       <Banner 
-        src={img} 
-        alt={data.about_alt} 
+        src={img}
+        alt={data.about_alt}
       />
 
       { data.about.map(({ title, content }) =>
 
         <Collapse 
-          key={title} 
-          title={title} 
-          content={content} 
+          key={title}
+          title={title}
+          content={content}
         />
 
       )}
