@@ -6,7 +6,8 @@
   --black: #000;
 
   --margin-mobile: 20px;
-  --margin-desktop: 50px;
+  --margin-tablet: 30px 60px;
+  --margin-desktop: 50px 100px;
 }
 
 body {
