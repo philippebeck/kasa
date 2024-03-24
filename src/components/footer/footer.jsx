@@ -1,24 +1,28 @@
+import data from "../../assets/data.json";
 import logo from "../../assets/footer.webp";
+
 import "./footer.css";
 
 /**
  * ? FOOTER
  * * Renders the footer component with the provided brand name.
  *
- * @param {Object} props - The props object containing the brand name.
- * @param {string} props.brand - The name of the brand.
  * @return {JSX.Element} The rendered footer component.
  */
-const Footer = ({ brand }) => {
+const Footer = () => {
 
   return (
     <footer className="footer">
-      <img src={logo} alt="Logo" />
+
+      <img
+        src={logo}
+        alt={data.logo}
+      />
 
       <p>
-        © 2020 {brand}.
-        All rights reserved
+        © {data.footer_year} {data.brand}. {data.footer_text}
       </p>
+
     </footer>
   )
 }

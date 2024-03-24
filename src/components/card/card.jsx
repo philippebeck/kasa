@@ -14,9 +14,14 @@ const Card = ({ src, alt, title }) => {
 
   return (
     <figure className="card">
-      <img src={src} alt={alt} />
+
+      <img 
+        src={src} 
+        alt={alt} 
+      />
 
       <figcaption>{title}</figcaption>
+
     </figure>
   )
 }

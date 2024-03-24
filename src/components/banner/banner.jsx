@@ -15,9 +15,15 @@ const Banner = ({ src, alt, title="", className="" }) => {
 
   return (
     <header className="banner">
-      <img src={src} alt={alt} className={className} />
+
+      <img 
+        src={src} 
+        alt={alt} 
+        className={className} 
+      />
 
       <h1>{title}</h1>
+
     </header>
   )
 }
