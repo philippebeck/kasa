@@ -1,13 +1,16 @@
+import data from "../../assets/data.json";
+
 import "./error.css";
 
 const Error = () => {
 
   return (
     <main id="error">
-      <h1>404</h1>
-      <p>Oups! La page que vous demandez n'existe pas.</p>
 
-      <a href="/">Retourner sur la page d’accueil</a>
+      <h1>{data.error_title}</h1>
+      <p>{data.error_text}</p>
+      <a href="/">{data.error_link}</a>
+
     </main>
   );
 }

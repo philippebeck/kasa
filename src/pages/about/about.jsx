@@ -1,5 +1,5 @@
-import about  from "../../assets/about.json";
-import img    from "../../assets/about.webp";
+import data from "../../assets/data.json";
+import img  from "../../assets/about.webp";
 
 import Banner   from "../../components/banner/banner";
 import Collapse from "../../components/collapse/collapse";
@@ -10,10 +10,20 @@ const About = () => {
 
   return (
     <main id="about">
-      <Banner src={img} alt="Des forêts entourées de montagnes" />
 
-      { about.map(({ title, content }) =>
-        <Collapse key={title} title={title} content={content} />
+      <Banner 
+        src={img} 
+        alt={data.about_alt} 
+      />
+
+      { data.about.map(({ title, content }) =>
+
+        <Collapse 
+          key={title} 
+          title={title} 
+          content={content} 
+        />
+
       )}
     </main>
   )
