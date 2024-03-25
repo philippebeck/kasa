@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./collapse.css";
 
 /**
@@ -11,15 +12,23 @@ import "./collapse.css";
  */
 const Collapse = ({ title, content }) => {
 
+  const [isContentVisible, setIsContentVisible] = useState(false);
+  const [isChevronRotated, setIsChevronRotated] = useState(false);
+
+  const toggleCollapse = () => {
+    setIsContentVisible(!isContentVisible);
+    setIsChevronRotated(!isChevronRotated);
+  }
+
   return (
     <section className="collapse">
 
-      <header>
+      <header onClick={toggleCollapse}>
         <h2>{title}</h2>
-        <i className="fa-solid fa-chevron-down"></i>
+        <i className={`fa-solid ${isChevronRotated ? 'fa-chevron-down' : 'fa-chevron-up'}`}></i>
       </header>
 
-      <p>{content}</p>
+      {isContentVisible && <p>{content}</p>}
 
     </section>
   )
