@@ -25,7 +25,9 @@ const Collapse = ({ title, content }) => {
 
       <header onClick={toggleCollapse}>
         <h2>{title}</h2>
-        <i className={`fa-solid ${isChevronRotated ? 'fa-chevron-down' : 'fa-chevron-up'}`}></i>
+        <i 
+          className={`fa-solid ${isChevronRotated ? 'fa-chevron-down' : 'fa-chevron-up'}`}
+        ></i>
       </header>
 
       {isContentVisible && <p>{content}</p>}

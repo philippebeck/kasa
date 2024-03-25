@@ -6,7 +6,7 @@ const Error = () => {
   return (
     <main id="error">
 
-      <h1>{data.state}</h1>
+      <h1>{data.code}</h1>
       <p>{data.error}</p>
       <a href="/">{data.link}</a>
 
