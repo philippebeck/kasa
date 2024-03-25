@@ -56,12 +56,12 @@ const Housing = () => {
 
       <footer>
         <Collapse
-          title={data.description}
+          title={data.text}
           content={card.description}
         />
 
         <Collapse
-          title={data.equipments}
+          title={data.list}
           content={card.equipments}
         />
       </footer>
