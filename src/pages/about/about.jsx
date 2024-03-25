@@ -13,10 +13,10 @@ const About = () => {
 
       <Banner 
         src={img}
-        alt={data.about_alt}
+        alt={data.about}
       />
 
-      { data.about.map(({ title, content }) =>
+      { data.collapse.map(({ title, content }) =>
 
         <Collapse 
           key={title}

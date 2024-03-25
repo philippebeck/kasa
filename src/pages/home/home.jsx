@@ -21,8 +21,8 @@ const Home = () => {
 
       <Banner
         src={img}
-        alt={data.home_alt}
-        title={data.home_title}
+        alt={data.home}
+        title={data.title}
       />
 
       <ul>

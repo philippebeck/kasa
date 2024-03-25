@@ -1,22 +1,17 @@
 {
-  "about_alt": "Des forêts entourées de montagnes",
+  "about": "Des forêts entourées de montagnes",
   "brand": "Kasa",
   "carousel": "Photo #",
-
-  "error_link": "Retourner sur la page d’accueil",
-  "error_text": "Oups! La page que vous demandez n'existe pas.",
-  "error_title": "404",
-
-  "footer_text": "All rights reserved",
-  "footer_year": "2020",
-
-  "home_alt": "Des falaises en bord de mer",
-  "home_title": "Chez vous, partout et ailleurs",
-
-  "housing_description": "Description",
-  "housing_equipments": "Équipements",
-
+  "code": "404",
+  "error": "Oups! La page que vous demandez n'existe pas.",
+  "copyright": "All rights reserved",
+  "description": "Description",
+  "equipments": "Équipements",
+  "home": "Des falaises en bord de mer",
+  "link": "Retourner sur la page d’accueil",
   "logo": "Logo Kasa",
+  "title": "Chez vous, partout et ailleurs",
+  "year": "2020",
 
   "nav": [
     {
@@ -29,7 +24,7 @@
     }
   ],
 
-  "about": [
+  "collapse": [
     {
       "title": "Fiabilité",
       "content": "Les annonces postées sur Kasa garantissent une fiablilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."

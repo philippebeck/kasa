@@ -20,7 +20,7 @@ const Footer = () => {
       />
 
       <p>
-        © {data.footer_year} {data.brand}. {data.footer_text}
+        © {data.year} {data.brand}. {data.copyright}
       </p>
 
     </footer>
