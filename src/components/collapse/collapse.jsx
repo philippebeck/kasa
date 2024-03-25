@@ -1,4 +1,5 @@
 import { useState } from "react";
+import data from "../../assets/data.json";
 import "./collapse.css";
 
 /**
@@ -26,12 +27,21 @@ const Collapse = ({ title, content }) => {
       <header onClick={toggleCollapse}>
         <h2>{title}</h2>
         <i 
-          className={`fa-solid ${isChevronRotated ? 'fa-chevron-down' : 'fa-chevron-up'}`}
+          className={`fa-solid ${ isChevronRotated ? 'fa-chevron-down' : 'fa-chevron-up' }`}
         ></i>
       </header>
 
-      {isContentVisible && <p>{content}</p>}
-
+      { isContentVisible && (title === data.list ? (
+        <ul>
+          { content.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      ) : (
+        <p>
+          {content}
+        </p>
+      ))}
     </section>
   )
 }

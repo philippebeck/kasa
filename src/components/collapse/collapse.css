@@ -16,7 +16,11 @@
     margin: 10px;
   }
 
-  p {
+  p,
+  ul {
+    display: flex;
+    flex-flow: wrap column;
+    gap: 2px;
     margin: -3px 0 0;
     padding: 10px;
     background-color: var(--grey);
