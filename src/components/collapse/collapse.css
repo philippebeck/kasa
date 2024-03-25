@@ -3,6 +3,8 @@
   width: 100%;
 
   header {
+    position: relative;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +24,19 @@
     flex-flow: wrap column;
     gap: 2px;
     margin: -3px 0 0;
+    border-radius: var(--radius-sm);
     padding: 10px;
+    font-size: 0.8rem;
     background-color: var(--grey);
+  }
+}
+
+@media (min-width: 768px) {
+  .collapse {
+
+    p,
+    ul {
+      font-size: 1.1rem;
+    }
   }
 }

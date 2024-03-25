@@ -5,6 +5,12 @@
 @media (min-width: 768px) {
   [id="about"] {
     margin: var(--margin-md);
+
+    header ~ section {
+      margin: inherit auto;
+      padding: 0 100px;
+      width: calc(100% - 200px);
+    }
   }
 }
 

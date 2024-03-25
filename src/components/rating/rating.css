@@ -1,4 +1,6 @@
 .rating {
+  display: flex;
+  gap: 10px;
   margin: 20px 0;
 }
 
