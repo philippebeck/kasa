@@ -50,6 +50,11 @@
         flex-flow: column-reverse;
       }
     }
+
+    & > footer {
+      display: flex;
+      gap: 60px;
+    }
   }
 }
 
