@@ -13,13 +13,8 @@ import "./collapse.css";
  */
 const Collapse = ({ title, content }) => {
 
-  const [isContentVisible, setIsContentVisible] = useState(false);
-  const [isChevronRotated, setIsChevronRotated] = useState(false);
-
-  const toggleCollapse = () => {
-    setIsContentVisible(!isContentVisible);
-    setIsChevronRotated(!isChevronRotated);
-  }
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleCollapse = () => setIsOpen(!isOpen);
 
   return (
     <section className="collapse">
@@ -27,20 +22,27 @@ const Collapse = ({ title, content }) => {
       <header onClick={toggleCollapse}>
         <h2>{title}</h2>
         <i 
-          className={`fa-solid ${ isChevronRotated ? 'fa-chevron-down' : 'fa-chevron-up' }`}
+          className={`fa-solid ${ isOpen ? 'fa-chevron-down rotate' : 'fa-chevron-up' } fa-lg`}
         ></i>
       </header>
 
-      { isContentVisible && (title === data.list ? (
+      { isOpen && (title === data.list ? (
         <ul>
           { content.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li 
+              key={index} 
+              className={`${ isOpen ? 'translate' : '' }`}>
+              {item}
+            </li>
           ))}
         </ul>
       ) : (
-        <p>
-          {content}
-        </p>
+        <ul>
+          <li className={`${ isOpen ? 'translate' : '' }`}>
+            {content}
+          </li>
+        </ul>
+
       ))}
     </section>
   )

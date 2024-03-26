@@ -1,16 +1,36 @@
+@keyframes rotate {
+  0% { transform: rotate(180deg) }
+}
+
+@keyframes translate {
+  0% {
+    transform: translateY(-200px);
+  }
+}
+
+.rotate {
+  animation: rotate 1s ease-in-out;
+}
+
+
+.translate {
+  animation: translate 1s ease-in-out;
+}
+
 .collapse {
   margin: 30px 0;
   width: 100%;
 
   header {
-    position: relative;
-    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 1;
     border-radius: var(--radius-sm);
     background-color: var(--primary);
     color: var(--white);
+    cursor: pointer;
   }
 
   h2,
@@ -18,15 +38,16 @@
     margin: 10px;
   }
 
-  p,
   ul {
     display: flex;
     flex-flow: wrap column;
     gap: 2px;
+    overflow: hidden;
     margin: -3px 0 0;
     border-radius: var(--radius-sm);
     padding: 10px;
     font-size: 0.8rem;
+    text-align: justify;
     background-color: var(--grey);
   }
 }
@@ -34,7 +55,6 @@
 @media (min-width: 768px) {
   .collapse {
 
-    p,
     ul {
       font-size: 1.1rem;
     }
