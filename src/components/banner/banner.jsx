@@ -16,7 +16,7 @@ const Banner = ({ src, alt, title="" }) => {
     <header className="banner">
 
       <img src={src} alt={alt} />
-      <h1>{title}</h1>
+      { title && <h1>{title}</h1> }
 
     </header>
   )
