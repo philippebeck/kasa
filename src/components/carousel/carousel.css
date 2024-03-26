@@ -17,6 +17,11 @@
     font-size: 1.5rem;
   }
 
+  .fa-chevron-left,
+  .fa-chevron-right {
+    cursor: pointer;
+  }
+
   .fa-chevron-left {
     top: calc(50% - 12px);
     left: 10px;
