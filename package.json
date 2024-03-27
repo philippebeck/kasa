@@ -5,8 +5,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -20,10 +18,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "devDependencies": {
-    "gh-pages": "^6.1.1"
-  },
-  "homepage": "https://philippebeck.github.io/kasa",
+  "homepage": "https://kasa.philippebeck.net",
   "repository": "github:philippebeck/kasa",
   "bugs": "https://github.com/philippebeck/kasa/issues",
   "license": "Apache-2.0 License",
