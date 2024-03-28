@@ -10,10 +10,8 @@
   li {
     width: 100%;
   }
-}
 
-@media (min-width: 768px) {
-  [id="home"] {
+  @media (min-width: 768px) {
     margin: var(--margin-md);
 
     ul {
@@ -27,10 +25,8 @@
       width: calc((100% - 30px) / 2);
     }
   }
-}
 
-@media (min-width: 1200px) {
-  [id="home"] {
+  @media (min-width: 1200px) {
     margin: var(--margin-lg);
 
     li {

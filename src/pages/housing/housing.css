@@ -34,10 +34,8 @@
       align-items: flex-end;
     }
   }
-}
 
-@media (min-width: 768px) {
-  [id="housing"] {
+  @media (min-width: 768px) {
     margin: var(--margin-md);
 
     & > section {
@@ -57,10 +55,8 @@
       gap: 60px;
     }
   }
-}
 
-@media (min-width: 1200px) {
-  [id="housing"] {
+  @media (min-width: 1200px) {
     margin: var(--margin-lg);
   }
 }

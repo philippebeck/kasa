@@ -1,9 +1,7 @@
 [id="about"] {
   margin: var(--margin-sm);
-}
 
-@media (min-width: 768px) {
-  [id="about"] {
+  @media (min-width: 768px) {
     margin: var(--margin-md);
 
     header ~ section {
@@ -12,10 +10,8 @@
       width: calc(100% - 200px);
     }
   }
-}
 
-@media (min-width: 1200px) {
-  [id="about"] {
+  @media (min-width: 1200px) {
     margin: var(--margin-lg);
   }
 }
