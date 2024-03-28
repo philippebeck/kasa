@@ -1,5 +1,5 @@
 [id="home"] {
-  margin: var(--margin-sm);
+  margin: var(--margin-tn);
 
   ul {
     display: flex;
@@ -12,7 +12,7 @@
   }
 
   @media (min-width: 768px) {
-    margin: var(--margin-md);
+    margin: var(--margin-sm) var(--margin-lg);
 
     ul {
       justify-content: center;
@@ -27,7 +27,7 @@
   }
 
   @media (min-width: 1200px) {
-    margin: var(--margin-lg);
+    margin: var(--margin-md) var(--margin-wd);
 
     li {
       width: calc((100% - 60px) / 3);

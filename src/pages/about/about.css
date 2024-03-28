@@ -1,8 +1,8 @@
 [id="about"] {
-  margin: var(--margin-sm);
+  margin: var(--margin-tn);
 
   @media (min-width: 768px) {
-    margin: var(--margin-md);
+    margin: var(--margin-sm) var(--margin-lg);
 
     header ~ section {
       margin: inherit auto;
@@ -12,6 +12,6 @@
   }
 
   @media (min-width: 1200px) {
-    margin: var(--margin-lg);
+    margin: var(--margin-md) var(--margin-wd);
   }
 }

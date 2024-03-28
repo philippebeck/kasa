@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: var(--margin-sm);
+  margin: var(--margin-tn);
   font-size: 0.8rem;
 
   img {
@@ -22,7 +22,7 @@
   }
 
   @media (min-width: 768px) {
-    margin: var(--margin-md);
+    margin: var(--margin-sm) var(--margin-lg);
     font-size: 1.2rem;
 
     img {
@@ -37,7 +37,7 @@
 
 
   @media (min-width: 1200px) {
-    margin: var(--margin-lg);
+    margin: var(--margin-md) var(--margin-wd);
     font-size: 1.5rem;
 
     img {

@@ -12,7 +12,7 @@
     padding: 60px 0 20px;
 
     img {
-      margin-bottom: 20px;
+      margin-bottom: var(--margin-tn);
     }
   }
 }

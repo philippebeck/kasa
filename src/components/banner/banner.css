@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  margin: 20px 0;
+  margin: var(--margin-tn) 0;
   height: var(--height-sm);
 
   img {
@@ -28,7 +28,7 @@
   }
 
   @media (min-width: 768px) {
-    margin: 30px 0;
+    margin: var(--margin-sm) 0;
     height: var(--height-md);
 
     img {
@@ -42,7 +42,7 @@
   }
 
   @media (min-width: 1200px) {
-    margin: 50px 0;
+    margin: var(--margin-md) 0;
     height: var(--height-lg);
 
     img {
