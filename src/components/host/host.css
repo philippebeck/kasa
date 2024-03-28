@@ -11,12 +11,8 @@
   img {
     border-radius: 50%;
     height: 35px;
-  }
-}
 
-@media (min-width: 768px) {
-  .host {
-    img {
+    @media (min-width: 768px) {
       height: 65px;
     }
   }

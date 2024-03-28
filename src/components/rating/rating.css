@@ -2,18 +2,16 @@
   display: flex;
   gap: 10px;
   margin: 20px 0;
-}
 
-.primary {
-  color: var(--primary);
-}
+  .primary {
+    color: var(--primary);
+  }
 
-.secondary {
-  color: var(--secondary);
-}
+  .secondary {
+    color: var(--secondary);
+  }
 
-@media (min-width: 768px) {
-  .rating {
+  @media (min-width: 768px) {
     i {
       font-size: 2rem;
     }
