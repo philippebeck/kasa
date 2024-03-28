@@ -30,13 +30,12 @@ const Home = () => {
 
           <li key={id}>
             <Link to={`/housing/${id}`}>
-              <Card src={cover} alt={`Présentation d'un ${title}`} title={title} />
+              <Card src={cover} alt={data.gallery + title} title={title} />
             </Link>
           </li>
 
         )}
       </ul>
-
     </main>
   )
 }
