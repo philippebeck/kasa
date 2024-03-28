@@ -1,15 +1,19 @@
 .banner {
+  --height-sm: 110px;
+  --height-md: 165px;
+  --height-lg: 220px;
+
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   margin: 20px 0;
-  height: 110px;
+  height: var(--height-sm);
 
   img {
     position: absolute;
     border-radius: var(--radius-md);
-    height: 110px;
+    height: var(--height-sm);
     width: 100%;
     object-fit: cover;
     filter: brightness(50%);
@@ -25,11 +29,11 @@
 
   @media (min-width: 768px) {
     margin: 30px 0;
-    height: 165px;
+    height: var(--height-md);
 
     img {
       border-radius: var(--radius-lg);
-      height: 165px;
+      height: var(--height-md);
     }
 
     h1 {
@@ -39,10 +43,10 @@
 
   @media (min-width: 1200px) {
     margin: 50px 0;
-    height: 220px;
+    height: var(--height-lg);
 
     img {
-      height: 220px;
+      height: var(--height-lg);
     }
 
     h1 {
