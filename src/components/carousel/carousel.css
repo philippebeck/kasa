@@ -17,18 +17,16 @@
     font-size: 1.5rem;
   }
 
-  .fa-chevron-left,
-  .fa-chevron-right {
+  [class*="fa-chevron-"] {
+    top: calc(50% - 12px);
     cursor: pointer;
   }
 
   .fa-chevron-left {
-    top: calc(50% - 12px);
     left: 10px;
   }
 
   .fa-chevron-right {
-    top: calc(50% - 12px);
     right: 10px;
   }
 
@@ -46,20 +44,22 @@
       font-size: 5rem;
     }
 
-    .fa-chevron-left {
+    [class*="fa-chevron-"] {
       top: calc(50% - 40px);
+    }
+
+    .fa-chevron-left {
       left: 10px;
     }
 
     .fa-chevron-right {
-      top: calc(50% - 40px);
       right: 10px;
     }
 
     b {
       display: block;
       bottom: 20px;
-      left: calc(50% - 10px);
+      left: calc(50% - 12px);
     }
   }
 }
