@@ -4,7 +4,9 @@
   "description": "Educational project on React",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -42,5 +44,8 @@
     "name": "Philippe Beck",
     "email": "philippe@philippebeck.net",
     "url": "https://philippebeck.net"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
