@@ -1,6 +1,6 @@
 {
   "name": "kasa",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Educational project on React",
   "scripts": {
     "start": "react-scripts start",
@@ -18,7 +18,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://kasa.philippebeck.net",
+  "homepage": "https://philippebeck.github.io/kasa",
   "repository": "github:philippebeck/kasa",
   "bugs": "https://github.com/philippebeck/kasa/issues",
   "license": "Apache-2.0 License",
