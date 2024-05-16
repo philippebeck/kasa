@@ -17,14 +17,14 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/kasa">
       <Nav />
 
       <Routes>
-        <Route path="/kasa/"            element={<Home />} />
-        <Route path="/kasa/housing/:id" element={<Housing />} />
-        <Route path="/kasa/about"       element={<About />} />
-        <Route path="/kasa/*"            element={<Error />} />
+        <Route exact path="/"            element={<Home />} />
+        <Route exact path="/housing/:id" element={<Housing />} />
+        <Route exact path="/about"       element={<About />} />
+        <Route       path="*"            element={<Error />} />
       </Routes>
 
       <Footer />
