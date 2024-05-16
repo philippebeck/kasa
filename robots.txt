@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://kasa.philippebeck.net/sitemap.xml
