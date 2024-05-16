@@ -21,10 +21,10 @@ root.render(
       <Nav />
 
       <Routes>
-        <Route path="/"            element={<Home />} />
-        <Route path="/housing/:id" element={<Housing />} />
-        <Route path="/about"       element={<About />} />
-        <Route path="*"            element={<Error />} />
+        <Route path="/kasa/"            element={<Home />} />
+        <Route path="/kasa/housing/:id" element={<Housing />} />
+        <Route path="/kasa/about"       element={<About />} />
+        <Route path="/kasa/*"            element={<Error />} />
       </Routes>
 
       <Footer />
